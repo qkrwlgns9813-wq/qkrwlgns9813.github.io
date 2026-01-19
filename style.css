@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #27ae60;
+    --accent-hover: #219150;
+    --bg-color: #ffffff;
+    --light-bg: #f8f9fa;
+    --text-color: #333333;
+    --border-color: #e9ecef;
+    --error-color: #e74c3c;
+    --warning-color: #f39c12;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Malgun Gothic", "Sunny Gothic", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+section h2, .lesson-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Flow Chart */
+.flow-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.step {
+    background-color: white;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.arrow {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.action-area {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.btn-start, .btn-submit {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-start:hover, .btn-submit:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Lesson Specific */
+.concept-block {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.question-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.options label {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Feedback Section */
+#feedback-section {
+    display: none; /* Hidden by default */
+    background-color: #e8f6f3;
+    border: 1px solid var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.score-display {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.diagnostic-msg {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.remediation-item {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--error-color);
+    border-radius: 4px;
+}
+
+.concept-tag {
+    display: inline-block;
+    background-color: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Next Lesson */
+.next-lesson-preview {
+    margin-top: 3rem;
+    opacity: 0.5; /* Dimmed until feedback shown, handled by JS normally but CSS backup */
+    transition: opacity 0.5s;
+    border-left: 5px solid var(--primary-color);
+}
+
+.next-lesson-preview.active {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: rgba(255,255,255,0.7);
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
