@@ -4,8 +4,8 @@
 
 ## 🔗 라이브 데모 (GitHub Pages)
 GitHub Pages를 통해 호스팅된 사이트를 확인하실 수 있습니다:
-> **[기술 교육 사이트 바로가기](https://qkrwlgns9813-wq/qkrwlgns9813.github.io/)**
-> *(참고: `your-username`과 `your-repo-name`을 실제 본인의 계정과 리포지토리 이름으로 수정해 주세요.)*
+> **[기술 교육 사이트 바로가기](https://qkrwlgns9813.github.io/sample/)**
+> *(참고: GitHub Settings > Pages에서 확인된 실제 URL로 수정하여 사용하세요.)*
 
 ## 📚 프로젝트 개요
 - **대상:** 중학교 기술·가정 교과 학습자 및 예비 교사
