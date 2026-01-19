@@ -4,7 +4,7 @@
 
 ## 🔗 라이브 데모 (GitHub Pages)
 GitHub Pages를 통해 호스팅된 사이트를 확인하실 수 있습니다:
-> **[기술 교육 사이트 바로가기](https://qkrwlgns9813.github.io/sample/)**
+> **[기술 교육 사이트 바로가기]([https://qkrwlgns9813.github.io/sample/](https://qkrwlgns9813-wq.github.io/qkrwlgns9813.github.io/))**
 > *(참고: GitHub Settings > Pages에서 확인된 실제 URL로 수정하여 사용하세요.)*
 
 ## 📚 프로젝트 개요
